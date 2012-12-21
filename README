@@ -1,0 +1,5 @@
+*A dirt-simple category on NSURLRequest to dump itself as a curl command.*
+
+Whenever I have a problem with my iPhone app, the services team want a curl request they can try to verify the bug.
+
+This is (obviously) by no means complete, but it covers all of my cases so far.
