@@ -9,7 +9,7 @@
 #define kCurlCommand        @"curl"
 #define kCurlFlagVerbsity   @" --verbose"
 #define kCurlFlagHeader     @" --header \"%@:%@\""
-#define kCurlFlagRequest    @" --request %@ %@"
+#define kCurlFlagRequest    @" --request %@ \"%@\""
 #define kCurlFlagData       @" --data '%@'"
 
 #import "NSURLRequest+AFCurlRequest.h"
