@@ -38,7 +38,7 @@
         dataString = [NSString stringWithFormat:kCurlFlagData, [[NSString alloc] initWithData:self.HTTPBody encoding:NSUTF8StringEncoding]];
     }
     
-    NSString* request = [NSString stringWithFormat:kCurlFlagRequest, self.HTTPMethod, self.URL.absoluteString];
+    NSString* request = [NSString stringWithFormat:kCurlFlagRequest, self.HTTPMethod, [NSString stringWithFormat:@"\"%@\"", self.URL.absoluteString]];
 
     return [[commandWithHeaders stringByAppendingString:dataString] stringByAppendingString:request];
 }
